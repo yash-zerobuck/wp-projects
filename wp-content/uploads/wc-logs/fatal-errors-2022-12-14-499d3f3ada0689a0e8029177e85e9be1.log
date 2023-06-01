@@ -1,0 +1,8 @@
+2022-12-14T14:33:33+00:00 CRITICAL Uncaught Error: Class 'WC_Payment_Gateways' not found in /home/quickseohelps/task1.quickseohelps.com/wp-content/plugins/woocommerce/includes/class-woocommerce.php:925
+Stack trace:
+#0 /home/quickseohelps/task1.quickseohelps.com/wp-content/plugins/woocommerce/includes/class-woocommerce.php(167): WooCommerce->payment_gateways()
+#1 /home/quickseohelps/task1.quickseohelps.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/src/StoreApi/Schemas/V1/CheckoutSchema.php(115): WooCommerce->__get('payment_gateway...')
+#2 /home/quickseohelps/task1.quickseohelps.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/src/StoreApi/Schemas/V1/AbstractSchema.php(62): Automattic\WooCommerce\StoreApi\Schemas\V1\CheckoutSchema->get_properties()
+#3 /home/quickseohelps/task1.quickseohelps.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/src/StoreApi/Routes/V1/AbstractRoute.php(85): Automattic\WooCommerce\StoreApi\Schemas\V1\AbstractSchema->get_item_schema()
+#4 /home/quickseohelps/task1.quickseohelps in /home/quickseohelps/task1.quickseohelps.com/wp-content/plugins/woocommerce/includes/class-woocommerce.php on line 925
+

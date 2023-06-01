@@ -1,0 +1,246 @@
+2022-12-06T10:29:27+00:00 CRITICAL Uncaught Error: Failed opening required '/home/quickseohelps/task1.quickseohelps.com/wp-content/plugins/elementor//includes/stylesheet.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/quickseohelps/task1.quickseohelps.com/wp-content/plugins/elementor/includes/autoloader.php:267
+Stack trace:
+#0 /home/quickseohelps/task1.quickseohelps.com/wp-content/plugins/elementor/includes/autoloader.php(303): Elementor\Autoloader::load_class()
+#1 /home/quickseohelps/task1.quickseohelps.com/wp-content/plugins/elementor/core/files/css/base.php(767): Elementor\Autoloader::autoload()
+#2 /home/quickseohelps/task1.quickseohelps.com/wp-content/plugins/elementor/core/files/css/base.php(492): Elementor\Core\Files\CSS\Base->init_stylesheet()
+#3 /home/quickseohelps/task1.quickseohelps.com/wp-content/plugins/elementor/core/files/css/base.php(662): Elementor\Core\Files\CSS\Base->get_stylesheet()
+#4 /home/quickseohelps/task1.quickseohelps.com/wp-content/plugins/elementor/core/files/base.php(180): Elementor\Core\Files\CSS\Base->parse_content()
+#5 /home/quickseohelps/task1.quickseohelps.com/wp-content/plugins/elementor/core/files/css/base.php(130): Elementor\Core\Files\Base->update_file()
+#6 /home/quickseohelps/task1.quickseohelps.com/wp-content/plugins/elementor/core/files/css/base.php(217): Elementor\Core\Files\CSS\Base->update()
+#7 /home/quickseohelps/task1.quickseohelps.com/wp-content/plugins/elementor/core/files/css/post.php(201): Elementor\Core\Files\CSS\Base->enqueue()
+#8 /home/quickseohelps/task1.quickseohelps.com/wp-content/plugins/elementor/core/dynamic-tags/manager.php(485): Elementor\Core\Files\CSS\Post->enqueue()
+#9 /home/quickseohelps/task1.quickseohelps.com/wp-includes/class-wp-hook.php(308): Elementor\Core\DynamicTags\Manager->after_enqueue_post_css()
+#10 /home/quickseohelps/task1.quickseohelps.com/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#11 /home/quickseohelps/task1.quickseohelps.com/wp-includes/plugin.php(517): WP_Hook->do_action()
+#12 /home/quickseohelps/task1.quickseohelps.com/wp-content/plugins/elementor/core/files/css/base.php(264): do_action()
+#13 /home/quickseohelps/task1.quickseohelps.com/wp-content/plugins/elementor/core/files/css/post.php(201): Elementor\Core\Files\CSS\Base->enqueue()
+#14 /home/quickseohelps/task1.quickseohelps.com/wp-content/plugins/elementskit-lite/helpers/utils.php(288): Elementor\Core\Files\CSS\Post->enqueue()
+#15 /home/quickseohelps/task1.quickseohelps.com/wp-content/plugins/elementskit/modules/header-footer/activator.php(85): ElementsKit_Lite\Utils::render_elementor_content_css()
+#16 /home/quickseohelps/task1.quickseohelps.com/wp-content/plugins/elementskit/modules/header-footer/activator.php(64): ElementsKit\Modules\Header_Footer\Activator::template_ids()
+#17 /home/quickseohelps/task1.quickseohelps.com/wp-includes/class-wp-hook.php(308): ElementsKit\Modules\Header_Footer\Activator->hooks()
+#18 /home/quickseohelps/task1.quickseohelps.com/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#19 /home/quickseohelps/task1.quickseohelps.com/wp-includes/plugin.php(565): WP_Hook->do_action()
+#20 /home/quickseohelps/task1.quickseohelps.com/wp-includes/class-wp.php(797): do_action_ref_array()
+#21 /home/quickseohelps/task1.quickseohelps.com/wp-includes/functions.php(1332): WP->main()
+#22 /home/quickseohelps/task1.quickseohelps.com/wp-blog-header.php(16): wp()
+#23 /home/quickseohelps/task1.quickseohelps.com/index.php(17): require('/home/quickseoh...')
+#24 {main}
+  thrown in /home/quickseohelps/task1.quickseohelps.com/wp-content/plugins/elementor/includes/autoloader.php on line 267
+
+2022-12-06T10:29:27+00:00 CRITICAL Uncaught Error: Class "ElementorPro\Modules\Woocommerce\Widgets\My_Account" not found in /home/quickseohelps/task1.quickseohelps.com/wp-content/plugins/elementor/core/base/module.php:325
+Stack trace:
+#0 /home/quickseohelps/task1.quickseohelps.com/wp-includes/class-wp-hook.php(308): Elementor\Core\Base\Module->init_widgets()
+#1 /home/quickseohelps/task1.quickseohelps.com/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#2 /home/quickseohelps/task1.quickseohelps.com/wp-includes/plugin.php(517): WP_Hook->do_action()
+#3 /home/quickseohelps/task1.quickseohelps.com/wp-content/plugins/elementor/includes/managers/widgets.php(119): do_action()
+#4 /home/quickseohelps/task1.quickseohelps.com/wp-content/plugins/elementor/includes/managers/widgets.php(310): Elementor\Widgets_Manager->init_widgets()
+#5 /home/quickseohelps/task1.quickseohelps.com/wp-content/plugins/elementor/includes/elements/column.php(1044): Elementor\Widgets_Manager->get_widget_types()
+#6 /home/quickseohelps/task1.quickseohelps.com/wp-content/plugins/elementor/includes/base/element-base.php(861): Elementor\Element_Column->_get_default_child_type()
+#7 /home/quickseohelps/task1.quickseohelps.com/wp-content/plugins/elementor/includes/base/element-base.php(338): Elementor\Element_Base->get_child_type()
+#8 /home/quickseohelps/task1.quickseohelps.com/wp-content/plugins/elementor/includes/base/element-base.php(906): Elementor\Element_Base->add_child()
+#9 /home/quickseohelps/task1.quickseohelps.com/wp-content/plugins/elementor/includes/base/element-base.php(298): Elementor\Element_Base->init_children()
+#10 /home/quickseohelps/task1.quickseohelps.com/wp-content/plugins/elementor/core/dynamic-tags/dynamic-css.php(35): Elementor\Element_Base->get_children()
+#11 /home/quickseohelps/task1.quickseohelps.com/wp-content/plugins/elementor/core/dynamic-tags/dynamic-css.php(36): Elementor\Core\DynamicTags\Dynamic_CSS->render_styles()
+#12 /home/quickseohelps/task1.quickseohelps.com/wp-content/plugins/elementor/core/files/css/post.php(178): Elementor\Core\DynamicTags\Dynamic_CSS->render_styles()
+#13 /home/quickseohelps/task1.quickseohelps.com/wp-content/plugins/elementor/core/files/css/base.php(643): Elementor\Core\Files\CSS\Post->render_css()
+#14 /home/quickseohelps/task1.quickseohelps.com/wp-content/plugins/elementor/core/files/base.php(180): Elementor\Core\Files\CSS\Base->parse_content()
+#15 /home/quickseohelps/task1.quickseohelps.com/wp-content/plugins/elementor/core/files/css/base.php(130): Elementor\Core\Files\Base->update_file()
+#16 /home/quickseohelps/task1.quickseohelps.com/wp-content/plugins/elementor/core/files/css/base.php(217): Elementor\Core\Files\CSS\Base->update()
+#17 /home/quickseohelps/task1.quickseohelps.com/wp-content/plugins/elementor/core/files/css/post.php(201): Elementor\Core\Files\CSS\Base->enqueue()
+#18 /home/quickseohelps/task1.quickseohelps.com/wp-content/plugins/elementor/core/dynamic-tags/manager.php(485): Elementor\Core\Files\CSS\Post->enqueue()
+#19 /home/quickseohelps/task1.quickseohelps.com/wp-includes/class-wp-hook.php(308): Elementor\Core\DynamicTags\Manager->after_enqueue_post_css()
+#20 /home/quickseohelps/task1.quickseohelps.com/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#21 /home/quickseohelps/task1.quickseohelps.com/wp-includes/plugin.php(517): WP_Hook->do_action()
+#22 /home/quickseohelps/task1.quickseohelps.com/wp-content/plugins/elementor/core/files/css/base.php(264): do_action()
+#23 /home/quickseohelps/task1.quickseohelps.com/wp-content/plugins/elementor/core/files/css/post.php(201): Elementor\Core\Files\CSS\Base->enqueue()
+#24 /home/quickseohelps/task1.quickseohelps.com/wp-content/plugins/elementskit-lite/helpers/utils.php(288): Elementor\Core\Files\CSS\Post->enqueue()
+#25 /home/quickseohelps/task1.quickseohelps.com/wp-content/plugins/elementskit/modules/header-footer/activator.php(85): ElementsKit_Lite\Utils::render_elementor_content_css()
+#26 /home/quickseohelps/task1.quickseohelps.com/wp-content/plugins/elementskit/modules/header-footer/activator.php(64): ElementsKit\Modules\Header_Footer\Activator::template_ids()
+#27 /home/quickseohelps/task1.quickseohelps.com/wp-includes/class-wp-hook.php(308): ElementsKit\Modules\Header_Footer\Activator->hooks()
+#28 /home/quickseohelps/task1.quickseohelps.com/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#29 /home/quickseohelps/task1.quickseohelps.com/wp-includes/plugin.php(565): WP_Hook->do_action()
+#30 /home/quickseohelps/task1.quickseohelps.com/wp-includes/class-wp.php(797): do_action_ref_array()
+#31 /home/quickseohelps/task1.quickseohelps.com/wp-includes/functions.php(1332): WP->main()
+#32 /home/quickseohelps/task1.quickseohelps.com/wp-blog-header.php(16): wp()
+#33 /home/quickseohelps/task1.quickseohelps.com/index.php(17): require('/home/quickseoh...')
+#34 {main}
+  thrown in /home/quickseohelps/task1.quickseohelps.com/wp-content/plugins/elementor/core/base/module.php on line 325
+
+2022-12-06T10:29:27+00:00 CRITICAL Uncaught Error: Class "ElementorPro\Modules\Woocommerce\Widgets\Cart" not found in /home/quickseohelps/task1.quickseohelps.com/wp-content/plugins/elementor/core/base/module.php:325
+Stack trace:
+#0 /home/quickseohelps/task1.quickseohelps.com/wp-includes/class-wp-hook.php(308): Elementor\Core\Base\Module->init_widgets()
+#1 /home/quickseohelps/task1.quickseohelps.com/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#2 /home/quickseohelps/task1.quickseohelps.com/wp-includes/plugin.php(517): WP_Hook->do_action()
+#3 /home/quickseohelps/task1.quickseohelps.com/wp-content/plugins/elementor/includes/managers/widgets.php(119): do_action()
+#4 /home/quickseohelps/task1.quickseohelps.com/wp-content/plugins/elementor/includes/managers/widgets.php(310): Elementor\Widgets_Manager->init_widgets()
+#5 /home/quickseohelps/task1.quickseohelps.com/wp-content/plugins/elementor/includes/elements/column.php(1044): Elementor\Widgets_Manager->get_widget_types()
+#6 /home/quickseohelps/task1.quickseohelps.com/wp-content/plugins/elementor/includes/base/element-base.php(861): Elementor\Element_Column->_get_default_child_type()
+#7 /home/quickseohelps/task1.quickseohelps.com/wp-content/plugins/elementor/includes/base/element-base.php(338): Elementor\Element_Base->get_child_type()
+#8 /home/quickseohelps/task1.quickseohelps.com/wp-content/plugins/elementor/includes/base/element-base.php(906): Elementor\Element_Base->add_child()
+#9 /home/quickseohelps/task1.quickseohelps.com/wp-content/plugins/elementor/includes/base/element-base.php(298): Elementor\Element_Base->init_children()
+#10 /home/quickseohelps/task1.quickseohelps.com/wp-content/plugins/elementor/core/dynamic-tags/dynamic-css.php(35): Elementor\Element_Base->get_children()
+#11 /home/quickseohelps/task1.quickseohelps.com/wp-content/plugins/elementor/core/dynamic-tags/dynamic-css.php(36): Elementor\Core\DynamicTags\Dynamic_CSS->render_styles()
+#12 /home/quickseohelps/task1.quickseohelps.com/wp-content/plugins/elementor/core/files/css/post.php(178): Elementor\Core\DynamicTags\Dynamic_CSS->render_styles()
+#13 /home/quickseohelps/task1.quickseohelps.com/wp-content/plugins/elementor/core/files/css/base.php(643): Elementor\Core\Files\CSS\Post->render_css()
+#14 /home/quickseohelps/task1.quickseohelps.com/wp-content/plugins/elementor/core/files/base.php(180): Elementor\Core\Files\CSS\Base->parse_content()
+#15 /home/quickseohelps/task1.quickseohelps.com/wp-content/plugins/elementor/core/files/css/base.php(130): Elementor\Core\Files\Base->update_file()
+#16 /home/quickseohelps/task1.quickseohelps.com/wp-content/plugins/elementor/core/files/css/base.php(217): Elementor\Core\Files\CSS\Base->update()
+#17 /home/quickseohelps/task1.quickseohelps.com/wp-content/plugins/elementor/core/files/css/post.php(201): Elementor\Core\Files\CSS\Base->enqueue()
+#18 /home/quickseohelps/task1.quickseohelps.com/wp-content/plugins/elementor/core/dynamic-tags/manager.php(485): Elementor\Core\Files\CSS\Post->enqueue()
+#19 /home/quickseohelps/task1.quickseohelps.com/wp-includes/class-wp-hook.php(308): Elementor\Core\DynamicTags\Manager->after_enqueue_post_css()
+#20 /home/quickseohelps/task1.quickseohelps.com/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#21 /home/quickseohelps/task1.quickseohelps.com/wp-includes/plugin.php(517): WP_Hook->do_action()
+#22 /home/quickseohelps/task1.quickseohelps.com/wp-content/plugins/elementor/core/files/css/base.php(264): do_action()
+#23 /home/quickseohelps/task1.quickseohelps.com/wp-content/plugins/elementor/core/files/css/post.php(201): Elementor\Core\Files\CSS\Base->enqueue()
+#24 /home/quickseohelps/task1.quickseohelps.com/wp-content/plugins/elementskit-lite/helpers/utils.php(288): Elementor\Core\Files\CSS\Post->enqueue()
+#25 /home/quickseohelps/task1.quickseohelps.com/wp-content/plugins/elementskit/modules/header-footer/activator.php(85): ElementsKit_Lite\Utils::render_elementor_content_css()
+#26 /home/quickseohelps/task1.quickseohelps.com/wp-content/plugins/elementskit/modules/header-footer/activator.php(64): ElementsKit\Modules\Header_Footer\Activator::template_ids()
+#27 /home/quickseohelps/task1.quickseohelps.com/wp-includes/class-wp-hook.php(308): ElementsKit\Modules\Header_Footer\Activator->hooks()
+#28 /home/quickseohelps/task1.quickseohelps.com/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#29 /home/quickseohelps/task1.quickseohelps.com/wp-includes/plugin.php(565): WP_Hook->do_action()
+#30 /home/quickseohelps/task1.quickseohelps.com/wp-includes/class-wp.php(797): do_action_ref_array()
+#31 /home/quickseohelps/task1.quickseohelps.com/wp-includes/functions.php(1332): WP->main()
+#32 /home/quickseohelps/task1.quickseohelps.com/wp-blog-header.php(16): wp()
+#33 /home/quickseohelps/task1.quickseohelps.com/index.php(17): require('/home/quickseoh...')
+#34 {main}
+  thrown in /home/quickseohelps/task1.quickseohelps.com/wp-content/plugins/elementor/core/base/module.php on line 325
+
+2022-12-06T17:40:09+00:00 CRITICAL Uncaught Error: Failed opening required '/home/quickseohelps/task1.quickseohelps.com/wp-content/plugins/woocommerce/includes/react-admin/class-experimental-abtest.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/quickseohelps/task1.quickseohelps.com/wp-content/plugins/woocommerce/src/Internal/Admin/FeaturePlugin.php:81
+Stack trace:
+#0 /home/quickseohelps/task1.quickseohelps.com/wp-content/plugins/woocommerce/src/Admin/Composer/Package.php(65): Automattic\WooCommerce\Internal\Admin\FeaturePlugin->init()
+#1 /home/quickseohelps/task1.quickseohelps.com/wp-content/plugins/woocommerce/src/Packages.php(64): Automattic\WooCommerce\Admin\Composer\Package::init()
+#2 /home/quickseohelps/task1.quickseohelps.com/wp-content/plugins/woocommerce/src/Packages.php(44): Automattic\WooCommerce\Packages::load_packages()
+#3 /home/quickseohelps/task1.quickseohelps.com/wp-includes/class-wp-hook.php(308): Automattic\WooCommerce\Packages::on_init()
+#4 /home/quickseohelps/task1.quickseohelps.com/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#5 /home/quickseohelps/task1.quickseohelps.com/wp-includes/plugin.php(517): WP_Hook->do_action()
+#6 /home/quickseohelps/task1.quickseohelps.com/wp-settings.php(480): do_action()
+#7 /home/quickseohelps/task1.quickseohelps.com/wp-config.php(96): require_once('/home/quickseoh...')
+#8 /home/quickseohelps/task1.quickseohelps.com/wp-load.php(50): require_once('/home/quickseoh...')
+#9 /home/quickseohelps/task1.quickseohelps.com/wp-blog-header.php(13): require_once('/home/quickseoh...')
+#10 /home/quickseohelps/task1.quickseohelps.com/index.php(17): require('/home/quickseoh...')
+#11 {main}
+  thrown in /home/quickseohelps/task1.quickseohelps.com/wp-content/plugins/woocommerce/src/Internal/Admin/FeaturePlugin.php on line 81
+
+2022-12-06T17:40:54+00:00 CRITICAL Uncaught Error: Class "\Elementor\ElementsKit_Widget_Client_Logo_Handler" not found in /home/quickseohelps/task1.quickseohelps.com/wp-content/plugins/elementskit-lite/core/build-widgets.php:52
+Stack trace:
+#0 /home/quickseohelps/task1.quickseohelps.com/wp-content/plugins/elementskit-lite/core/build-widgets.php(27): ElementsKit_Lite\Core\Build_Widgets->add_widget()
+#1 /home/quickseohelps/task1.quickseohelps.com/wp-content/plugins/elementskit-lite/traits/singleton.php(17): ElementsKit_Lite\Core\Build_Widgets->__construct()
+#2 /home/quickseohelps/task1.quickseohelps.com/wp-content/plugins/elementskit-lite/plugin.php(53): ElementsKit_Lite\Core\Build_Widgets::instance()
+#3 /home/quickseohelps/task1.quickseohelps.com/wp-content/plugins/elementskit-lite/plugin.php(401): ElementsKit_Lite\Plugin->__construct()
+#4 /home/quickseohelps/task1.quickseohelps.com/wp-content/plugins/elementskit-lite/elementskit-lite.php(349): ElementsKit_Lite\Plugin::instance()
+#5 /home/quickseohelps/task1.quickseohelps.com/wp-includes/class-wp-hook.php(308): ElementsKit_Lite->{closure}()
+#6 /home/quickseohelps/task1.quickseohelps.com/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#7 /home/quickseohelps/task1.quickseohelps.com/wp-includes/plugin.php(517): WP_Hook->do_action()
+#8 /home/quickseohelps/task1.quickseohelps.com/wp-content/plugins/elementor/includes/plugin.php(652): do_action()
+#9 /home/quickseohelps/task1.quickseohelps.com/wp-includes/class-wp-hook.php(308): Elementor\Plugin->init()
+#10 /home/quickseohelps/task1.quickseohelps.com/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#11 /home/quickseohelps/task1.quickseohelps.com/wp-includes/plugin.php(517): WP_Hook->do_action()
+#12 /home/quickseohelps/task1.quickseohelps.com/wp-settings.php(617): do_action()
+#13 /home/quickseohelps/task1.quickseohelps.com/wp-config.php(96): require_once('/home/quickseoh...')
+#14 /home/quickseohelps/task1.quickseohelps.com/wp-load.php(50): require_once('/home/quickseoh...')
+#15 /home/quickseohelps/task1.quickseohelps.com/wp-blog-header.php(13): require_once('/home/quickseoh...')
+#16 /home/quickseohelps/task1.quickseohelps.com/index.php(17): require('/home/quickseoh...')
+#17 {main}
+  thrown in /home/quickseohelps/task1.quickseohelps.com/wp-content/plugins/elementskit-lite/core/build-widgets.php on line 52
+
+2022-12-06T17:40:54+00:00 CRITICAL Uncaught Error: Failed opening required '/home/quickseohelps/task1.quickseohelps.com/wp-admin/includes/plugin.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/quickseohelps/task1.quickseohelps.com/wp-content/plugins/woocommerce/src/Admin/PluginsHelper.php:13
+Stack trace:
+#0 /home/quickseohelps/task1.quickseohelps.com/wp-content/plugins/woocommerce/vendor/jetpack-autoloader/class-php-autoloader.php(87): require()
+#1 /home/quickseohelps/task1.quickseohelps.com/wp-content/plugins/woocommerce/src/Internal/Admin/FeaturePlugin.php(157): Automattic\Jetpack\Autoloader\jp051090fab80b43c2037f77369c99d7be\PHP_Autoloader::load_class()
+#2 /home/quickseohelps/task1.quickseohelps.com/wp-content/plugins/woocommerce/src/Internal/Admin/FeaturePlugin.php(101): Automattic\WooCommerce\Internal\Admin\FeaturePlugin->includes()
+#3 /home/quickseohelps/task1.quickseohelps.com/wp-content/plugins/woocommerce/src/Internal/Admin/FeaturePlugin.php(84): Automattic\WooCommerce\Internal\Admin\FeaturePlugin->on_plugins_loaded()
+#4 /home/quickseohelps/task1.quickseohelps.com/wp-content/plugins/woocommerce/src/Admin/Composer/Package.php(65): Automattic\WooCommerce\Internal\Admin\FeaturePlugin->init()
+#5 /home/quickseohelps/task1.quickseohelps.com/wp-content/plugins/woocommerce/src/Packages.php(64): Automattic\WooCommerce\Admin\Composer\Package::init()
+#6 /home/quickseohelps/task1.quickseohelps.com/wp-content/plugins/woocommerce/src/Packages.php(44): Automattic\WooCommerce\Packages::load_packages()
+#7 /home/quickseohelps/task1.quickseohelps.com/wp-includes/class-wp-hook.php(308): Automattic\WooCommerce\Packages::on_init()
+#8 /home/quickseohelps/task1.quickseohelps.com/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#9 /home/quickseohelps/task1.quickseohelps.com/wp-includes/plugin.php(517): WP_Hook->do_action()
+#10 /home/quickseohelps/task1.quickseohelps.com/wp-settings.php(480): do_action()
+#11 /home/quickseohelps/task1.quickseohelps.com/wp-config.php(96): require_once('/home/quickseoh...')
+#12 /home/quickseohelps/task1.quickseohelps.com/wp-load.php(50): require_once('/home/quickseoh...')
+#13 /home/quickseohelps/task1.quickseohelps.com/wp-admin/admin-ajax.php(22): require_once('/home/quickseoh...')
+#14 {main}
+  thrown in /home/quickseohelps/task1.quickseohelps.com/wp-content/plugins/woocommerce/src/Admin/PluginsHelper.php on line 13
+
+2022-12-06T17:42:02+00:00 CRITICAL Uncaught Error: Failed opening required '/home/quickseohelps/task1.quickseohelps.com/wp-content/plugins/elementskit-lite/core/config-list.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/quickseohelps/task1.quickseohelps.com/wp-content/plugins/elementskit-lite/autoloader.php:55
+Stack trace:
+#0 /home/quickseohelps/task1.quickseohelps.com/wp-content/plugins/elementskit-lite/config/widget-list.php(6): ElementsKit_Lite\Autoloader::autoload()
+#1 /home/quickseohelps/task1.quickseohelps.com/wp-content/plugins/elementskit-lite/autoloader.php(55): require_once('/home/quickseoh...')
+#2 /home/quickseohelps/task1.quickseohelps.com/wp-content/plugins/elementskit-lite/compatibility/data-migration/settings-db.php(9): ElementsKit_Lite\Autoloader::autoload()
+#3 /home/quickseohelps/task1.quickseohelps.com/wp-content/plugins/elementskit-lite/plugin.php(41): ElementsKit_Lite\Compatibility\Data_Migration\Settings_Db->__construct()
+#4 /home/quickseohelps/task1.quickseohelps.com/wp-content/plugins/elementskit-lite/plugin.php(401): ElementsKit_Lite\Plugin->__construct()
+#5 /home/quickseohelps/task1.quickseohelps.com/wp-content/plugins/elementskit-lite/elementskit-lite.php(349): ElementsKit_Lite\Plugin::instance()
+#6 /home/quickseohelps/task1.quickseohelps.com/wp-includes/class-wp-hook.php(308): ElementsKit_Lite->{closure}()
+#7 /home/quickseohelps/task1.quickseohelps.com/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#8 /home/quickseohelps/task1.quickseohelps.com/wp-includes/plugin.php(517): WP_Hook->do_action()
+#9 /home/quickseohelps/task1.quickseohelps.com/wp-content/plugins/elementor/includes/plugin.php(652): do_action()
+#10 /home/quickseohelps/task1.quickseohelps.com/wp-includes/class-wp-hook.php(308): Elementor\Plugin->init()
+#11 /home/quickseohelps/task1.quickseohelps.com/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#12 /home/quickseohelps/task1.quickseohelps.com/wp-includes/plugin.php(517): WP_Hook->do_action()
+#13 /home/quickseohelps/task1.quickseohelps.com/wp-settings.php(617): do_action()
+#14 /home/quickseohelps/task1.quickseohelps.com/wp-config.php(96): require_once('/home/quickseoh...')
+#15 /home/quickseohelps/task1.quickseohelps.com/wp-load.php(50): require_once('/home/quickseoh...')
+#16 /home/quickseohelps/task1.quickseohelps.com/wp-blog-header.php(13): require_once('/home/quickseoh...')
+#17 /home/quickseohelps/task1.quickseohelps.com/index.php(17): require('/home/quickseoh...')
+#18 {main}
+  thrown in /home/quickseohelps/task1.quickseohelps.com/wp-content/plugins/elementskit-lite/autoloader.php on line 55
+
+2022-12-06T17:42:02+00:00 CRITICAL During class fetch: Uncaught Error: Failed opening required '/home/quickseohelps/task1.quickseohelps.com/wp-content/plugins/elementskit-lite/widgets/widget-notice.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/quickseohelps/task1.quickseohelps.com/wp-content/plugins/elementskit-lite/autoloader.php:55
+Stack trace:
+#0 /home/quickseohelps/task1.quickseohelps.com/wp-content/plugins/elementskit-lite/widgets/image-accordion/image-accordion.php(10): ElementsKit_Lite\Autoloader::autoload()
+#1 /home/quickseohelps/task1.quickseohelps.com/wp-content/plugins/elementskit-lite/core/build-widgets.php(42): include('/home/quickseoh...')
+#2 /home/quickseohelps/task1.quickseohelps.com/wp-content/plugins/elementskit-lite/core/build-widgets.php(27): ElementsKit_Lite\Core\Build_Widgets->add_widget()
+#3 /home/quickseohelps/task1.quickseohelps.com/wp-content/plugins/elementskit-lite/traits/singleton.php(17): ElementsKit_Lite\Core\Build_Widgets->__construct()
+#4 /home/quickseohelps/task1.quickseohelps.com/wp-content/plugins/elementskit-lite/plugin.php(53): ElementsKit_Lite\Core\Build_Widgets::instance()
+#5 /home/quickseohelps/task1.quickseohelps.com/wp-content/plugins/elementskit-lite/plugin.php(401): ElementsKit_Lite\Plugin->__construct()
+#6 /home/quickseohelps/task1.quickseohelps.com/wp-content/plugins/elementskit-lite/elementskit-lite.php(349): ElementsKit_Lite\Plugin::instance()
+#7 /home/quickseohelps/task1.quickseohelps.com/wp-includes/class-wp-hook.php(308): ElementsKit_Lite->{closure}()
+#8 /home/quickseohelps/task1.quickseohelps.com/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#9 /home/quickseohelps/task1.quickseohelps.com/wp-includes/plugin.php(517): WP_Hook->do_action()
+#10 /home/quickseohelps/task1.quickseohelps.com/wp-content/plugins/elementor/includes/plugin.php(652): do_action()
+#11 /home/quickseohelps/task1.quickseohelps.com/wp-includes/class-wp-hook.php(308): Elementor\Plugin->init()
+#12 /home/quickseohelps/task1.quickseohelps.com/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#13 /home/quickseohelps/task1.quickseohelps.com/wp-includes/plugin.php(517): WP_Hook->do_action()
+#14 /home/quickseohelps/task1.quickseohelps.com/wp-settings.php(617): do_action()
+#15 /home/quickseohelps/task1.quickseohelps.com/wp-config.php(96): require_once('/home/quickseoh...')
+#16 /home/quickseohelps/task1.quickseohelps.com/wp-load.php(50): require_once('/home/quickseoh...')
+#17 /home/quickseohelps/task1.quickseohelps.com/wp-blog-header.php(13): require_once('/home/quickseoh...')
+#18 /home/quickseohelps/task1.quickseohelps.com/index.php(17): require('/home/quickseoh...')
+#19 {main} in /home/quickseohelps/task1.quickseohelps.com/wp-content/plugins/elementskit-lite/widgets/image-accordion/image-accordion.php on line 10
+
+2022-12-06T17:42:02+00:00 CRITICAL Uncaught Error: Failed opening required '/home/quickseohelps/task1.quickseohelps.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/src/BlockTypes/AttributeFilter.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/quickseohelps/task1.quickseohelps.com/wp-content/plugins/woocommerce/vendor/jetpack-autoloader/class-php-autoloader.php:87
+Stack trace:
+#0 /home/quickseohelps/task1.quickseohelps.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/src/BlockTypesController.php(64): Automattic\Jetpack\Autoloader\jp051090fab80b43c2037f77369c99d7be\PHP_Autoloader::load_class()
+#1 /home/quickseohelps/task1.quickseohelps.com/wp-includes/class-wp-hook.php(308): Automattic\WooCommerce\Blocks\BlockTypesController->register_blocks()
+#2 /home/quickseohelps/task1.quickseohelps.com/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#3 /home/quickseohelps/task1.quickseohelps.com/wp-includes/plugin.php(517): WP_Hook->do_action()
+#4 /home/quickseohelps/task1.quickseohelps.com/wp-settings.php(617): do_action()
+#5 /home/quickseohelps/task1.quickseohelps.com/wp-config.php(96): require_once('/home/quickseoh...')
+#6 /home/quickseohelps/task1.quickseohelps.com/wp-load.php(50): require_once('/home/quickseoh...')
+#7 /home/quickseohelps/task1.quickseohelps.com/wp-blog-header.php(13): require_once('/home/quickseoh...')
+#8 /home/quickseohelps/task1.quickseohelps.com/index.php(17): require('/home/quickseoh...')
+#9 {main}
+  thrown in /home/quickseohelps/task1.quickseohelps.com/wp-content/plugins/woocommerce/vendor/jetpack-autoloader/class-php-autoloader.php on line 87
+
+2022-12-06T18:01:46+00:00 CRITICAL Uncaught Error: Failed opening required '/home/quickseohelps/task1.quickseohelps.com/wp-content/plugins/elementskit-lite/modules/widget-builder/init.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/quickseohelps/task1.quickseohelps.com/wp-content/plugins/elementskit-lite/autoloader.php:55
+Stack trace:
+#0 [internal function]: ElementsKit_Lite\Autoloader::autoload()
+#1 /home/quickseohelps/task1.quickseohelps.com/wp-content/plugins/elementskit-lite/core/build-modules.php(44): class_exists()
+#2 /home/quickseohelps/task1.quickseohelps.com/wp-content/plugins/elementskit-lite/traits/singleton.php(17): ElementsKit_Lite\Core\Build_Modules->__construct()
+#3 /home/quickseohelps/task1.quickseohelps.com/wp-content/plugins/elementskit-lite/plugin.php(56): ElementsKit_Lite\Core\Build_Modules::instance()
+#4 /home/quickseohelps/task1.quickseohelps.com/wp-content/plugins/elementskit-lite/plugin.php(401): ElementsKit_Lite\Plugin->__construct()
+#5 /home/quickseohelps/task1.quickseohelps.com/wp-content/plugins/elementskit-lite/elementskit-lite.php(349): ElementsKit_Lite\Plugin::instance()
+#6 /home/quickseohelps/task1.quickseohelps.com/wp-includes/class-wp-hook.php(308): ElementsKit_Lite->{closure}()
+#7 /home/quickseohelps/task1.quickseohelps.com/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#8 /home/quickseohelps/task1.quickseohelps.com/wp-includes/plugin.php(517): WP_Hook->do_action()
+#9 /home/quickseohelps/task1.quickseohelps.com/wp-content/plugins/elementor/includes/plugin.php(652): do_action()
+#10 /home/quickseohelps/task1.quickseohelps.com/wp-includes/class-wp-hook.php(308): Elementor\Plugin->init()
+#11 /home/quickseohelps/task1.quickseohelps.com/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#12 /home/quickseohelps/task1.quickseohelps.com/wp-includes/plugin.php(517): WP_Hook->do_action()
+#13 /home/quickseohelps/task1.quickseohelps.com/wp-settings.php(617): do_action()
+#14 /home/quickseohelps/task1.quickseohelps.com/wp-config.php(96): require_once('/home/quickseoh...')
+#15 /home/quickseohelps/task1.quickseohelps.com/wp-load.php(50): require_once('/home/quickseoh...')
+#16 /home/quickseohelps/task1.quickseohelps.com/wp-admin/admin-ajax.php(22): require_once('/home/quickseoh...')
+#17 {main}
+  thrown in /home/quickseohelps/task1.quickseohelps.com/wp-content/plugins/elementskit-lite/autoloader.php on line 55
+
